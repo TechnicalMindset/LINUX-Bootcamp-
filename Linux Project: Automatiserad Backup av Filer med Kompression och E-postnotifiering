@@ -1,0 +1,111 @@
+Linux Project: Automatiserad Backup av Filer med Kompression och E-postnotifiering
+Projektmål: Automatisera säkerhetskopiering av viktiga filer på en server. Denna säkerhetskopia ska komprimeras för att spara utrymme, lagras på en annan plats, och en e-postnotifiering ska skickas efter att säkerhetskopian är klar.
+
+
+STEP BY STEP
+
+Steg-för-steg: Automatiserad Backup med Linux Bash-skript
+Här följer en steg-för-steg guide för att skapa en säkerhetskopieringslösning med komprimering och e-postnotifiering i Linux.
+
+Steg 1: Installera nödvändiga verktyg
+För att säkerställa att alla nödvändiga verktyg finns installerade:
+Öppna terminalen.
+Kör följande kommandon för att installera tar, gzip, och mailutils om de inte redan är installerade:
+
+sudo apt update
+sudo apt install tar gzip mailutils
+
+
+tar: För att skapa en arkivfil.
+gzip: För att komprimera backupen.
+mailutils: För att skicka notifieringar via e-post.
+
+
+
+
+
+
+
+Steg 2: Skapa kataloger
+Bestäm var dina säkerhetskopior ska sparas och skapa nödvändiga kataloger. I detta exempel kommer säkerhetskopian att sparas i katalogen ~/root/technical_mindset/backups.
+Kör följande kommando för att skapa en backup-katalog:
+
+mkdir -p ~/technical_mindset/backups
+
+Steg 3: Skriv bash-skriptet
+Nu ska du skapa ett bash-skript som utför säkerhetskopieringen och skickar e-postnotifieringar. Vi kommer att säkerhetskopiera 1 katalog: /etc.
+Skapa ett nytt skript, t.ex. backup.sh:
+
+#!/bin/bash
+
+# Ange källkatalogerna som ska säkerhetskopieras
+SOURCE_DIRECTORIES="/etc"
+
+# Ange backup-katalogen
+BACKUP_DIRECTORY="/root/technical_mindset/backups"
+
+# Skapa ett filnamn med dagens datum
+DATE=$(date +"%Y%m%d")
+
+BACKUP_FILE="$BACKUP_DIRECTORY/backup_$DATE.tar.gz"
+
+# Debug-utskrift
+echo "Creating backup file at: $BACKUP_FILE"
+echo "Backing up directories: $SOURCE_DIRECTORIES"
+
+# Skapa en säkerhetskopia med tar och komprimera med gzip
+tar -czf $BACKUP_FILE $SOURCE_DIRECTORIES 2>> error_log.txt
+
+# Kontrollera om backupen lyckades
+if [ $? -eq 0 ]; then
+    # Skicka ett e-postmeddelande om lyckad säkerhetskopia
+    echo "Backup completed successfully on $(date)" | mail -s "Backup Success" hello.technicalmindset@gmail.com
+else
+    # Skicka ett e-postmeddelande om backupen misslyckades
+
+
+Spara filen och avsluta genom att trycka på CTRL + X, sedan Y och Enter.
+
+Steg 4: Gör skriptet exekverbart
+För att kunna köra skriptet måste du göra det exekverbart.
+Kör detta kommando:
+
+chmod +x ~/root/technical_mindset/backup.sh
+
+
+
+Steg 5: Testa skriptet
+Innan du schemalägger skriptet, testa det manuellt för att se till att det fungerar korrekt.
+
+Kopiera kod
+~/root/Technical_mindset/backup.sh
+
+Kolla om filen skapades i backup-katalogen:
+
+ls ~/root/Technical_mindset/backups
+
+Om backupen lyckades, kontrollera om du har fått ett e-postmeddelande. Om det inte fungerar, kan du testa med en enklare notifiering:
+
+echo "Testmeddelande" | mail -s "Test" user@example.com
+
+
+
+Steg 6: Automatisera med Cron
+För att automatisera säkerhetskopieringen kan du schemalägga skriptet att köras automatiskt varje dag med hjälp av cron.
+Öppna crontab för att redigera schemaläggningar:
+
+crontab -e
+
+Lägg till följande rad för att köra säkerhetskopian varje dag kl. 2 på morgonen:
+
+21 * * * ~/root/Technical_mindset/backup.sh
+Spara och stäng crontab.
+
+Steg 7: Kontrollera Cron-jobben
+För att se till att cron-jobbet körs korrekt kan du kontrollera statusen med följande kommando:
+crontab -l
+
+
+
+Real World Application
+Detta projekt kan användas för att regelbundet säkerhetskopiera viktiga filer på en server och få notifieringar om backupen lyckades. Det är ett praktiskt sätt att skydda data på och säkerställa kontinuerlig drift i verkliga systemadministrationsmiljöer.
