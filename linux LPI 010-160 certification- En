@@ -106,6 +106,8 @@ Correct Answer: E
 Explanation:
 The last command shows a log of user login sessions. It provides information on when users logged in and out, and which terminals they used.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Question 10: What is true about the owner of a file?
 A. The user who owns a file must be a member of the file's group.
 B. The owner of a file cannot be changed once it is assigned.
@@ -115,6 +117,8 @@ E. When a user is deleted, all files owned by that user are removed.
 Correct Answer: C
 Explanation:
 In Linux, every file has a specific owner (a user) and is assigned to a group. This ownership determines access permissions.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question 11: What is the UID of the user root?
 A. 255
