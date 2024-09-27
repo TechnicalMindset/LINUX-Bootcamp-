@@ -206,6 +206,8 @@ E. run test.sh
 Correct Answers: A, D
 Explanation: You can run the script with both bash test.sh and ./test.sh. Example: Check the script's output after execution.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Question 19: Which of the following keys can be pressed to exit less?
 A. l
 B. e
@@ -214,6 +216,8 @@ D. !
 E. x
 Correct Answer: C (q)
 Explanation: Press "q" to exit less. Example: Open a file with less file.txt and press "q" to close.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question 20: What keyword is used in a shell script to begin a loop? (Specify one keyword only, without any additional information.)
 A. for
