@@ -173,6 +173,8 @@ E. The encrypted password
 Correct Answers: A, C, D
 Explanation: /etc/passwd stores the user's name, UID, and default shell. Example: View content with cat /etc/passwd.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Question 16: Which command adds the new user tux and creates the user’s home directory with default configuration files?
 A. useradd –m tux
 B. defaultuser tux
@@ -181,6 +183,8 @@ D. passwd –a tux
 E. usercreate tux
 Correct Answer: A (useradd –m tux)
 Explanation: This command creates the user and home directory with necessary files. Example: Check the home directory with ls /home/tux.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question 17: Which of the following commands creates an archive file work.tar from the contents of the directory ./work/?
 A. tar work > work.tar
@@ -191,7 +195,7 @@ E. tar –create work.tgz –content ./work/
 Correct Answer: D (tar –cf work.tar ./work/)
 Explanation: This command creates a tar archive file from the directory contents. Example: Check with ls work.tar.
 
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question 18: The current directory contains the following file: -rwxr-xr-x 1 root root 859688 Feb 7 08:15 test.sh. Given that the file is a valid shell script, how can this script be executed? (Choose two.)
 A. bash test.sh
