@@ -129,11 +129,7 @@ E. 65536
 Correct Answer: B (0)
 Explanation: The UID (User Identifier) for the root user is always 0. Root has full rights and control over the system. Example: You can check root's UID with the command id root.
 
-
-
-
-
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question 12: Which permissions are set on a regular file once the permissions have been modified with the command chmod 654 file.txt?
 A. d—wxr-x--
@@ -143,6 +139,8 @@ D. –wxr-x--x
 E. -rw-r-xr--
 Correct Answer: E (-rw-r-xr--)
 Explanation: The chmod 654 command sets read, write, and execute permissions. 6 (rw-) for the owner, 5 (r-x) for the group, and 4 (r--) for others. Example: Check permissions with ls -l file.txt.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question 13: Which of the following tar options handle compression? (Choose two.)
 A. -z
