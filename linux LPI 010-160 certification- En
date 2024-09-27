@@ -151,6 +151,8 @@ E. -j
 Correct Answers: A (-z), E (-j)
 Explanation: -z is used for gzip compression and -j is used for bzip2 compression. Example: tar -czf archive.tar.gz folder (compresses with gzip).
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Question 14: Which of the following permissions are set on the /tmp/ directory?
 A. rwX
 B. rwxrwxrwt
@@ -160,7 +162,7 @@ E. rwxrwS---
 Correct Answer: B (rwxrwxrwt)
 Explanation: The permissions for /tmp/ include "t," indicating that only the owner can delete their files there. Example: Check with ls -ld /tmp.
 
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question 15: What information is stored in /etc/passwd? (Choose three.)
 A. The user’s default shell
