@@ -20,7 +20,7 @@ Correct Answer: A
 Explanation:
 CentOS is a free version of Red Hat Enterprise Linux and is binary-compatible with Red Hat, making it the best choice to utilize existing Red Hat knowledge without paying for a subscription.
 
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question 3: Reverse DNS assigns hostnames to IP addresses. How is the name for IP address 198.51.100.165 stored on a DNS server?
 A. In the A record for 165.100.51.198.ipv4.arpa.
