@@ -10,6 +10,8 @@ Correct Answer: D, E
 Explanation:
 SSD (Solid-State Drives) use memory chips and have no moving parts, which makes them faster than HDD (Hard Disk Drives). HDDs have a rotating disk that stores data and mechanical parts like a motor, which makes them slower and more prone to failure compared to SSDs.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Question 2: Members of a team already have experience using Red Hat Enterprise Linux. For a small hobby project, the team wants to set up a Linux server without paying for a subscription. Which of the following Linux distributions allows team members to apply as much of their Red Hat Enterprise Linux knowledge as possible?
 A. CentOS
 B. Debian GNU/Linux
@@ -32,6 +34,8 @@ Correct Answer: E
 Explanation:
 PTR (Pointer) records are used in reverse DNS lookups to map an IP address to a hostname. The format is reversed (165.100.51.198) and ends with "in-addr.arpa" for IPv4 addresses.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Question 4: What type of bus can connect hard drives to the motherboard?
 A. RAM bus
 B. NUMA bus
@@ -41,6 +45,8 @@ E. SATA bus
 Correct Answer: E
 Explanation:
 SATA (Serial ATA) is the bus used to connect hard drives and solid-state drives to the motherboard in most modern computers.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question 5: Which of the following commands can be used to resolve a DNS name to an IP address?
 A. dnsname
@@ -52,9 +58,7 @@ Correct Answer: E
 Explanation:
 The host command is used to perform DNS lookups, including resolving domain names to IP addresses.
 
-
-
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question 6: What information can be displayed by top?
 A. User accounts sorted by the number of files.
@@ -65,6 +69,8 @@ E. Existing files sorted by size.
 Correct Answer: B
 Explanation:
 The top command shows a dynamic view of system processes, typically sorted by CPU or memory usage. It helps monitor system performance and resource utilization.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question 7: Which of the following output comes from the free command?
 A. 21:04 up 14 days, 7:43, 3 users, load average: 0.89, 1.00, 0.99
