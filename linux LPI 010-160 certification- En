@@ -82,6 +82,8 @@ Correct Answer: E
 Explanation:
 The free command shows memory-related information, including total memory, used memory, and buffers/cache.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Question 8: What is true about the dmesg command? (Choose two.)
 A. It may not show older information as it has been overwritten by newer messages.
 B. It sends messages to the command lines of all current user sessions.
@@ -92,9 +94,7 @@ Correct Answer: D, A
 Explanation:
 The dmesg command displays the content of the kernel ring buffer, which stores system messages. Over time, old messages may be overwritten as new ones are added.
 
-
-
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Question 9: Which of the following output could come from the last command?
 A. 1 ls\n 2 cat text.txt\n 3 logout
