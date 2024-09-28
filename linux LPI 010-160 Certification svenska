@@ -116,6 +116,8 @@ Rätt svar: E
 Förklaring:
 last-kommandot visar en lista över senaste inloggningar för användare på systemet. Det visar när och hur länge en användare var inloggad.
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Fråga 10: Vad är sant om ägaren av en fil?
 A. Användaren som äger en fil måste vara medlem av filens grupp.
 B. Ägaren av en fil kan inte ändras när den har tilldelats en ägare.
@@ -127,6 +129,8 @@ Rätt svar: C
 Förklaring:
 Alla filer i Linux har en specifik ägare (användare) och är tilldelade en grupp. Detta styr åtkomsträttigheter för filen.
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Fråga 11: Vad är UID för användaren root?
 A. 255
 B. 0
@@ -136,8 +140,7 @@ E. 65536
 Rätt svar: B (0)
 Förklaring: UID (User Identifier) för root-användaren är alltid 0. Root har fulla rättigheter och kontroll över systemet. Exempel: Du kan kontrollera root UID med kommandot id root.
 
-
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Fråga 12: Vilka rättigheter sätts på en vanlig fil när rättigheterna har ändrats med kommandot chmod 654 file.txt?
 A. d—wxr-x--
