@@ -51,6 +51,8 @@ Förklaring:
 SATA (Serial ATA) är en buss som används för att ansluta hårddiskar och SSD
 till moderkortet i de flesta moderna datorer.
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Fråga 5: Vilken av följande kommandon kan användas för att lösa ett DNS-namn till en IP-adress?
 A. dnsname
 B. query
@@ -61,6 +63,9 @@ Rätt svar: E
 
 Förklaring:
 host-kommandot används för att utföra DNS-uppslag och kan returnera IP-adresserna för ett domännamn.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Fråga 6: Vilken information kan visas av top?
 A. Användarkonton, sorterade efter antal filer.
 B. Aktiva processer, sorterade efter CPU- eller RAM-användning.
