@@ -77,6 +77,8 @@ Rätt svar: B
 Förklaring:
 top visar information om systemets aktuella processer, CPU- och RAM-användning. Processerna sorteras oftast efter CPU- eller minnesanvändning.
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Fråga 7: Vilken av följande utdata kommer från kommandot free?
 A. 21:04 up 14 dagar, 7:43, 3 användare, load average: 0.89, 1.00, 0.99
 B. avg-cpu: %user %nice %system %iowait %steal %idle 16.36 0.00 2.99 1.06 0.00 79.59
@@ -88,6 +90,8 @@ Rätt svar: E
 Förklaring:
 free visar minnesrelaterad information, såsom det totala tillgängliga minnet, använt minne, buffertar och cache.
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Fråga 8: Vad är sant om kommandot dmesg? (Välj två.)
 A. Det kanske inte visar äldre information eftersom den har skrivits över av nyare information.
 B. Det skickar meddelanden till kommandoraderna för alla aktuella användarsessioner.
@@ -98,6 +102,8 @@ Rätt svar: D, A
 
 Förklaring:
 dmesg visar innehållet i ringbuffern där Linux-kärnan skriver systemmeddelanden. Det kan bli överskrivet när nya meddelanden skrivs in.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Fråga 9: Vilken av följande utdata kan komma från kommandot last?
 A. 1 ls\n 2 cat text.txt\n 3 logout
