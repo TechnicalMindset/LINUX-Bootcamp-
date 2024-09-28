@@ -151,6 +151,8 @@ E. -rw-r-xr--
 Rätt svar: E (-rw-r-xr--)
 Förklaring: Kommandot chmod 654 sätter läs-, skriv- och körbehörigheter. 6 (rw-) för ägaren, 5 (r-x) för gruppen, och 4 (r--) för andra. Exempel: Kontrollera rättigheter med ls -l file.txt.
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Fråga 13: Vilka av följande tar-alternativ hanterar kompression? (Välj två.)
 A. -z
 B. -g
@@ -159,6 +161,8 @@ D. -bz
 E. -j
 Rätt svar: A (-z), E (-j)
 Förklaring: -z används för gzip-kompression och -j används för bzip2-kompression. Exempel: tar -czf archive.tar.gz folder (komprimerar med gzip).
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Fråga 14: Vilka av följande rättigheter är inställda på katalogen /tmp/?
 A. rwX
@@ -169,7 +173,7 @@ E. rwxrwS---
 Rätt svar: B (rwxrwxrwt)
 Förklaring: Rättigheterna för /tmp/ inkluderar "t" som indikerar att endast ägaren kan radera sina filer där. Exempel: Kontrollera med ls -ld /tmp.
 
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Fråga 15: Vilken information lagras i /etc/passwd? (Välj tre.)
 A. Användarens standard-skal
