@@ -9,7 +9,7 @@ Rätt svar: D, E
 
 Förklaring:
 SSD-enheter använder minneskretsar och har inga rörliga delar, vilket gör dem snabbare än HDD. HDD-enheter använder en roterande skiva som lagrar data, vilket är långsammare. De har också en motor som kan gå sönder, vilket inte är fallet med SSD-enheter.
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Fråga 2: Medlemmar i ett team har redan erfarenhet av att använda Red Hat Enterprise Linux. För ett litet hobbyprojekt vill teamet sätta upp en Linux-server utan att betala för en prenumeration. Vilken av följande Linux-distributioner gör att teammedlemmarna kan tillämpa så mycket av sin Red Hat Enterprise Linux-kunskap som möjligt?
 
 A. CentOS
@@ -22,9 +22,7 @@ Rätt svar: A
 Förklaring:
 CentOS är en gratis version av Red Hat Enterprise Linux och är binärt kompatibel med Red Hat. Detta gör det till det bästa valet för att använda befintliga Red Hat-kunskaper utan att betala för en prenumeration.
 
-
-
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 Fråga 3: Reverse DNS tilldelar värdnamn till IP-adresser. Hur lagras namnet på IP-adressen 198.51.100.165 på en DNS-server?
@@ -38,6 +36,8 @@ Rätt svar: E
 
 Förklaring:
 PTR-poster (Pointer Records) används i Reverse DNS-uppslag för att tilldela ett värdnamn till en IP-adress. Formatet är bakvänt (165.100.51.198) och domänen slutar med "in-addr.arpa".
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Fråga 4: Vilken typ av buss kan koppla hårddiskar till moderkortet?
 A. RAM-bussen
