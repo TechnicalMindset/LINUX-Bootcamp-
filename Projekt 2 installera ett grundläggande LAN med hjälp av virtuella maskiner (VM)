@@ -1,0 +1,70 @@
+Steg 1: Förberedelse
+Installera Virtualiseringsprogramvara:
+Välj en virtualiseringsplattform som VirtualBox, VMware eller KVM.
+Ladda ner och installera programvaran på din värddator.
+Ladda ner Linux-distributioner:
+Välj en Linux-distribution (t.ex. Ubuntu, CentOS, Debian).
+Ladda ner ISO-filerna för de distributioner du vill använda för dina virtuella maskiner.
+Steg 2: Skapa Virtuella Maskiner
+Öppna din virtualiseringsprogramvara:
+Starta programvaran och skapa en ny virtuell maskin.
+Skapa VM1:
+Välj en lämplig namn och operativsystem (t.ex. Ubuntu 64-bit).
+Tilldela RAM-minne och CPU-resurser.
+Välj "Bridged" eller "Internal Network" som nätverksinställning.
+Ladda upp ISO-filen och installera operativsystemet.
+Skapa VM2:
+Upprepa stegen ovan för att skapa en andra virtuell maskin.
+Steg 3: Nätverkskonfiguration
+Konfigurera Nätverksinställningar:
+Se till att båda VMar är anslutna till samma nätverksadapter (t.ex. Internal Network) för att de ska kunna kommunicera med varandra.
+Starta Virtuella Maskiner:
+Starta båda virtuella maskiner och logga in.
+Steg 4: Installera och Konfigurera Nätverk på Linux
+Uppdatera systemet:
+På båda maskinerna, kör kommandot:
+bash
+Kopiera kod
+sudo apt update && sudo apt upgrade -y
+
+
+Konfigurera IP-adresser:
+Redigera nätverkskonfigurationsfilen (exempelvis /etc/netplan/01-netcfg.yaml för Ubuntu):
+yaml
+Kopiera kod
+network:
+  version: 2
+  ethernets:
+    eth0:
+      dhcp4: no
+      addresses:
+        - 192.168.1.10/24  # För VM1
+
+
+Gör detsamma för VM2, men ge den en annan IP-adress (t.ex. 192.168.1.11/24).
+Tilldela IP-adresser:
+Spara ändringarna och tillämpa nätverkskonfigurationen:
+bash
+Kopiera kod
+sudo netplan apply
+
+
+Steg 5: Testa Nätverksanslutning
+Ping VM1 från VM2:
+Öppna terminalen på VM2 och kör:
+bash
+Kopiera kod
+ping 192.168.1.10
+
+
+Ping VM2 från VM1:
+Öppna terminalen på VM1 och kör:
+bash
+Kopiera kod
+ping 192.168.1.11
+
+
+Steg 6: Avslutande steg
+Installera valfria tjänster (valfritt):
+Om du vill testa mer avancerade funktioner, kan du installera tjänster som SSH, FTP eller en webserver på någon av VMar.
+Dokumentera projektet:
