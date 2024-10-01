@@ -1,6 +1,7 @@
 Steg 1: Förberedelse:
 
 Installera Virtualiseringsprogramvara:
+
 Välj en virtualiseringsplattform som VirtualBox, VMware eller KVM.
 Ladda ner och installera programvaran på din värddator.
 Ladda ner Linux-distributioner:
