@@ -59,7 +59,7 @@ else
 
 Spara filen och avsluta genom att trycka på CTRL + X, sedan Y och Enter.
 
-Steg 4: Gör skriptet exekverbart
+✅ Steg 4: Gör skriptet exekverbart
 För att kunna köra skriptet måste du göra det exekverbart.
 Kör detta kommando:
 
