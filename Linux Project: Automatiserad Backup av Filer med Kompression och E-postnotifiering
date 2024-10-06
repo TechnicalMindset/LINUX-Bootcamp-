@@ -67,7 +67,7 @@ chmod +x ~/root/technical_mindset/backup.sh
 
 
 
-Steg 5: Testa skriptet
+✅ Steg 5: Testa skriptet
 Innan du schemalägger skriptet, testa det manuellt för att se till att det fungerar korrekt.
 
 Kopiera kod
