@@ -1,4 +1,5 @@
 Linux Project: Automatiserad Backup av Filer med Kompression och E-postnotifiering
+
 Projektmål: Automatisera säkerhetskopiering av viktiga filer på en server. Denna säkerhetskopia ska komprimeras för att spara utrymme, lagras på en annan plats, och en e-postnotifiering ska skickas efter att säkerhetskopian är klar.
 
 
