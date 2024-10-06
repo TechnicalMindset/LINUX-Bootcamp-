@@ -83,7 +83,7 @@ echo "Testmeddelande" | mail -s "Test" user@example.com
 
 
 
-Steg 6: Automatisera med Cron
+✅ Steg 6: Automatisera med Cron
 För att automatisera säkerhetskopieringen kan du schemalägga skriptet att köras automatiskt varje dag med hjälp av cron.
 Öppna crontab för att redigera schemaläggningar:
 
