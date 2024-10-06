@@ -19,13 +19,13 @@ Kör följande kommandon för att installera tar, gzip, och mailutils om de inte
 
 
 
-Steg 2: Skapa kataloger
+✅ Steg 2: Skapa kataloger
 Bestäm var dina säkerhetskopior ska sparas och skapa nödvändiga kataloger. I detta exempel kommer säkerhetskopian att sparas i katalogen ~/root/technical_mindset/backups.
 Kör följande kommando för att skapa en backup-katalog:
 
-mkdir -p ~/technical_mindset/backups
+🔴 mkdir -p ~/technical_mindset/backups
 
-Steg 3: Skriv bash-skriptet
+✅ Steg 3: Skriv bash-skriptet
 Nu ska du skapa ett bash-skript som utför säkerhetskopieringen och skickar e-postnotifieringar. Vi kommer att säkerhetskopiera 1 katalog: /etc.
 Skapa ett nytt skript, t.ex. backup.sh:
 
