@@ -3,7 +3,7 @@ Linux Project: Automatiserad Backup av Filer med Kompression och E-postnotifieri
 Projektmål: Automatisera säkerhetskopiering av viktiga filer på en server. Denna säkerhetskopia ska komprimeras för att spara utrymme, lagras på en annan plats, och en e-postnotifiering ska skickas efter att säkerhetskopian är klar.
 
 
-
+✅
 🔴Steg-för-steg: Automatiserad Backup med Linux Bash-skript
 Här följer en steg-för-steg guide för att skapa en säkerhetskopieringslösning med komprimering och e-postnotifiering i Linux.
 
@@ -19,10 +19,6 @@ sudo apt install tar gzip mailutils
 tar: För att skapa en arkivfil.
 gzip: För att komprimera backupen.
 mailutils: För att skicka notifieringar via e-post.
-
-
-
-
 
 
 
