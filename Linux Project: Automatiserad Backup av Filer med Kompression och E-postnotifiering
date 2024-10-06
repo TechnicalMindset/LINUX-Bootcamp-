@@ -13,11 +13,9 @@ Kör följande kommandon för att installera tar, gzip, och mailutils om de inte
 
 🔴 sudo apt update
 🔴 sudo apt install tar gzip mailutils
-
-
-tar: För att skapa en arkivfil.
-gzip: För att komprimera backupen.
-mailutils: För att skicka notifieringar via e-post.
+🔴 tar: För att skapa en arkivfil.
+🔴 gzip: För att komprimera backupen.
+🔴 mailutils: För att skicka notifieringar via e-post.
 
 
 
