@@ -1,9 +1,10 @@
 ✅ Steg 1: Installera Virtualiseringsprogramvara:
 
-Välj en virtualiseringsplattform som VirtualBox, VMware eller KVM.
+✔️ Välj en virtualiseringsplattform som VirtualBox, VMware eller KVM.
 Ladda ner och installera programvaran på din värddator.
 Ladda ner Linux-distributioner:
-Välj en Linux-distribution (t.ex. Ubuntu, CentOS, Debian).
+
+✔️ Välj en Linux-distribution (t.ex. Ubuntu, CentOS, Debian).
 Ladda ner ISO-filerna för de distributioner du vill använda för dina virtuella maskiner.
 Steg 2: Skapa Virtuella Maskiner
 Öppna din virtualiseringsprogramvara:
