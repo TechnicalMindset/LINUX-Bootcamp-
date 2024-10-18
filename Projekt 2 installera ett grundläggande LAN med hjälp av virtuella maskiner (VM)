@@ -3,20 +3,23 @@
 ✔️ Välj en virtualiseringsplattform som VirtualBox, VMware eller KVM.
 Ladda ner och installera programvaran på din värddator.
 Ladda ner Linux-distributioner:
-
 ✔️ Välj en Linux-distribution (t.ex. Ubuntu, CentOS, Debian).
 Ladda ner ISO-filerna för de distributioner du vill använda för dina virtuella maskiner.
-Steg 2: Skapa Virtuella Maskiner
-Öppna din virtualiseringsprogramvara:
-Starta programvaran och skapa en ny virtuell maskin.
-Skapa VM1:
-Välj en lämplig namn och operativsystem (t.ex. Ubuntu 64-bit).
-Tilldela RAM-minne och CPU-resurser.
-Välj "Bridged" eller "Internal Network" som nätverksinställning.
-Ladda upp ISO-filen och installera operativsystemet.
-Skapa VM2:
-Upprepa stegen ovan för att skapa en andra virtuell maskin.
-Steg 3: Nätverkskonfiguration
+
+✅Steg 2: Skapa Virtuella Maskiner
+
+✔️ Öppna din virtualiseringsprogramvara: Starta programvaran och skapa en ny virtuell maskin.
+
+🔴 Skapa VM1:
+✔️ Välj en lämplig namn och operativsystem (t.ex. Ubuntu 64-bit).
+✔️ Tilldela RAM-minne och CPU-resurser.
+✔️ Välj "Bridged" eller "Internal Network" som nätverksinställning.
+✔️ Ladda upp ISO-filen och installera operativsystemet.
+
+🔴 Skapa VM2:
+✔️ Upprepa stegen ovan för att skapa en andra virtuell maskin.
+
+🔴 Steg 3: Nätverkskonfiguration
 Konfigurera Nätverksinställningar:
 Se till att båda VMar är anslutna till samma nätverksadapter (t.ex. Internal Network) för att de ska kunna kommunicera med varandra.
 Starta Virtuella Maskiner:
