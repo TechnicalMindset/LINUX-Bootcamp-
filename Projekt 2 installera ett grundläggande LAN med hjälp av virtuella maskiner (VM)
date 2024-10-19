@@ -20,22 +20,21 @@ Ladda ner ISO-filerna för de distributioner du vill använda för dina virtuell
 ✔️ Upprepa stegen ovan för att skapa en andra virtuell maskin.
 
 🔴 Steg 3: Konfigurera Nätverksinställningar:
-✔️Se till att båda VMar är anslutna till samma nätverksadapter (t.ex. Internal Network) för att de ska kunna kommunicera med varandra.
-✔️Starta Virtuella Maskiner
-✔️Starta båda virtuella maskiner och logga in.
+✔️ Se till att båda VMar är anslutna till samma nätverksadapter (t.ex. Internal Network) för att de ska kunna kommunicera med varandra.
+✔️ Starta Virtuella Maskiner
+✔️ Starta båda virtuella maskiner och logga in.
 
 🔴Steg 4: Installera och Konfigurera Nätverk på Linux
-Uppdatera systemet:
+✔️ Uppdatera systemet:
 På båda maskinerna, kör kommandot:
-bash
-Kopiera kod
+
 sudo apt update && sudo apt upgrade -y
 
 
 Konfigurera IP-adresser:
 Redigera nätverkskonfigurationsfilen (exempelvis /etc/netplan/01-netcfg.yaml för Ubuntu):
 yaml
-Kopiera kod
+
 network:
   version: 2
   ethernets:
