@@ -6,7 +6,7 @@ Ladda ner Linux-distributioner:
 ✔️ Välj en Linux-distribution (t.ex. Ubuntu, CentOS, Debian).
 Ladda ner ISO-filerna för de distributioner du vill använda för dina virtuella maskiner.
 
-✅Steg 2: Skapa Virtuella Maskiner
+✅ Steg 2: Skapa Virtuella Maskiner
 
 ✔️ Öppna din virtualiseringsprogramvara: Starta programvaran och skapa en ny virtuell maskin.
 
@@ -24,11 +24,11 @@ Ladda ner ISO-filerna för de distributioner du vill använda för dina virtuell
 ✔️ Starta Virtuella Maskiner
 ✔️ Starta båda virtuella maskiner och logga in.
 
-🔴Steg 4: Installera och Konfigurera Nätverk på Linux
+🔴 Steg 4: Installera och Konfigurera Nätverk på Linux
 ✔️ Uppdatera systemet:
 På båda maskinerna, kör kommandot:
 
-sudo apt update && sudo apt upgrade -y
+🟢 sudo apt update && sudo apt upgrade -y
 
 
 Konfigurera IP-adresser:
