@@ -24,7 +24,8 @@ Konfigurera Nätverksinställningar:
 Se till att båda VMar är anslutna till samma nätverksadapter (t.ex. Internal Network) för att de ska kunna kommunicera med varandra.
 Starta Virtuella Maskiner:
 Starta båda virtuella maskiner och logga in.
-Steg 4: Installera och Konfigurera Nätverk på Linux
+
+🔴Steg 4: Installera och Konfigurera Nätverk på Linux
 Uppdatera systemet:
 På båda maskinerna, kör kommandot:
 bash
