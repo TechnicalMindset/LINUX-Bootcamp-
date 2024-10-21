@@ -34,11 +34,11 @@ På båda maskinerna, kör kommandot:
 🟢 Redigera nätverkskonfigurationsfilen (exempelvis /etc/netplan/01-netcfg.yaml för Ubuntu)
 
 ✔️ network:
-  version: 2
+✔️ version: 2
 ✔️ ethernets:
-    eth0:
-    dhcp4: no
-    addresses:
+✔️ eth0:
+✔️ dhcp4: no
+✔️ addresses:
  🟢   - 192.168.1.10/24  # För VM1
 
 
