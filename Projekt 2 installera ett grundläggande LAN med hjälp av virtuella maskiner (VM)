@@ -30,8 +30,7 @@ På båda maskinerna, kör kommandot:
 
 🟢 sudo apt update && sudo apt upgrade -y
 
-
-Konfigurera IP-adresser:
+✔️ Konfigurera IP-adresser:
 Redigera nätverkskonfigurationsfilen (exempelvis /etc/netplan/01-netcfg.yaml för Ubuntu):
 yaml
 
