@@ -31,16 +31,15 @@ På båda maskinerna, kör kommandot:
 🟢 sudo apt update && sudo apt upgrade -y
 
 ✔️ Konfigurera IP-adresser:
-Redigera nätverkskonfigurationsfilen (exempelvis /etc/netplan/01-netcfg.yaml för Ubuntu):
-yaml
+🟢 Redigera nätverkskonfigurationsfilen (exempelvis /etc/netplan/01-netcfg.yaml för Ubuntu)
 
-network:
+✔️ network:
   version: 2
-  ethernets:
+✔️ ethernets:
     eth0:
-      dhcp4: no
-      addresses:
-        - 192.168.1.10/24  # För VM1
+    dhcp4: no
+    addresses:
+ 🟢   - 192.168.1.10/24  # För VM1
 
 
 Gör detsamma för VM2, men ge den en annan IP-adress (t.ex. 192.168.1.11/24).
