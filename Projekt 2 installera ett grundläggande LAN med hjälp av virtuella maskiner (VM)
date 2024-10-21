@@ -41,9 +41,9 @@ På båda maskinerna, kör kommandot:
 ✔️ addresses:
 🟢 192.168.1.10/24  # För VM1
 
-Gör detsamma för VM2, men ge den en annan IP-adress (t.ex. 192.168.1.11/24).
-Tilldela IP-adresser:
-Spara ändringarna och tillämpa nätverkskonfigurationen:
+🔴 Gör detsamma för VM2, men ge den en annan IP-adress (t.ex. 192.168.1.11/24).
+✔️ Tilldela IP-adresser
+✔️ Spara ändringarna och tillämpa nätverkskonfigurationen
 bash
 Kopiera kod
 sudo netplan apply
