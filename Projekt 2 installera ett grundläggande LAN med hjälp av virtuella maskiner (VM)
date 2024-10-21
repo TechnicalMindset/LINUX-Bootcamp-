@@ -39,7 +39,7 @@ På båda maskinerna, kör kommandot:
 ✔️ eth0:
 ✔️ dhcp4: no
 ✔️ addresses:
- 🟢    192.168.1.10/24  # För VM1
+ 🟢   192.168.1.10/24  # För VM1
 
 
 Gör detsamma för VM2, men ge den en annan IP-adress (t.ex. 192.168.1.11/24).
