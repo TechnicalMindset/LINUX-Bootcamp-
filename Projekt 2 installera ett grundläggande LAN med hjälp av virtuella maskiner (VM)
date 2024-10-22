@@ -58,7 +58,7 @@ På båda maskinerna, kör kommandot:
 Ping VM2 från VM1:
 Öppna terminalen på VM1 och kör:
 
-ping 192.168.1.11
+🟢 ping 192.168.1.11
 
 
 Steg 6: Avslutande steg
