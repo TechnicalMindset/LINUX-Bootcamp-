@@ -51,9 +51,8 @@ På båda maskinerna, kör kommandot:
 🔴 Steg 5: Testa Nätverksanslutning
 ✔️ Ping VM1 från VM2:
 ✔️ Öppna terminalen på VM2 och kör:
-bash
-Kopiera kod
-ping 192.168.1.10
+
+🟢 ping 192.168.1.10
 
 
 Ping VM2 från VM1:
