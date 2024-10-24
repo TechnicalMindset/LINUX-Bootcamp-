@@ -61,7 +61,7 @@ Ping VM2 från VM1:
 🟢 ping 192.168.1.11
 
 
-Steg 6: Avslutande steg
+🔴 Steg 6: Avslutande steg
 Installera valfria tjänster (valfritt):
 Om du vill testa mer avancerade funktioner, kan du installera tjänster som SSH, FTP eller en webserver på någon av VMar.
 Dokumentera projektet:
