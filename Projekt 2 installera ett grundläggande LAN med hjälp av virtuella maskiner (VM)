@@ -62,6 +62,6 @@ Ping VM2 från VM1:
 
 
 🔴 Steg 6: Avslutande steg
-Installera valfria tjänster (valfritt):
-Om du vill testa mer avancerade funktioner, kan du installera tjänster som SSH, FTP eller en webserver på någon av VMar.
+✔️ Installera valfria tjänster (valfritt):
+✔️ Om du vill testa mer avancerade funktioner, kan du installera tjänster som SSH, FTP eller en webserver på någon av VMar.
 Dokumentera projektet:
