@@ -1,0 +1,38 @@
+🚨 Troubleshooting Guide 🚨
+
+1. Email Notifications Not Sent
+🛠 Problem: The first email test failed due to an unconfigured mailutils.
+💡 Solution: Configure postfix and update email settings to ensure messages are sent from the server.
+
+2. Slow Backup for Large Files
+🛠 Problem: Backups took a long time when large files were included.
+💡 Solution: Exclude temporary and log files that aren't needed to optimize backup time.
+
+3. Errors Running Cron Job
+🛠 Problem: The cron job failed due to issues with environment variables.
+💡 Solution: Add the full paths for each tool (e.g., /bin/tar) in the script to ensure cron can locate the commands.
+
+4. Unable to Find Correct Script File
+🛠 Problem: The found script file was empty and located in /home/user/backups instead of the needed version in /root/technical_mindset/backup.sh.
+💡 Solution: Move the directory from /home/user/backups to /root/technical_mindset/backups to access the correct script.
+
+5. Issue with Accessing System Files on Windows 11 from WSL (Ubuntu)
+🛠 Problem: fdisk was unavailable in Ubuntu under Windows Subsystem for Linux (WSL), blocking disk access attempts.
+💡 Solution:
+Step 1: Try sudo fdisk -l to list partitions (initial error: fdisk not found).
+Step 2: Attempted installation of fdisk by installing util-linux:
+
+sudo apt update
+sudo apt install util-linux
+
+🚨 However, the error persisted.
+
+Step 3: Verify util-linux installation using:
+
+dpkg -l | grep util-linux
+
+Alternative Solution: Use lsblk instead:
+
+sudo lsblk
+
+Final Step: Directly access Windows files in WSL by navigating to /mnt/c, where Windows disks are automatically mounted.
