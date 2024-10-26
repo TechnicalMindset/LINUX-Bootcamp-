@@ -1,0 +1,165 @@
+🟢 Step 1: Preparation 🧰
+
+1️⃣ Install Virtualization Software:
+Choose a virtualization platform like VirtualBox 🖥️.
+Download and install the software on your host computer 💻.
+
+2️⃣ Install Python & Fix PATH Issues:
+Ensure Python is installed to automate tasks and run network analysis scripts 🐍.
+
+3️⃣ Download Linux Distributions:
+Choose a Linux distribution (e.g., Ubuntu, CentOS, Debian) 🐧.
+Download the ISO files of the distributions for the VMs.
+
+🟢 Step 2: Create Virtual Machines 💾
+
+1️⃣ Open Virtualization Software:
+Start the software and create a new VM ⚙️.
+
+2️⃣ Create VM1:
+Name it and select an operating system (e.g., Ubuntu 64-bit).
+Assign memory (RAM) and CPU resources.
+Select "Bridged" or "Internal Network" as the network setting 🌐.
+Upload the ISO file and install the OS 📀.
+
+3️⃣ Create VM2:
+Repeat the same steps to set up a second VM.
+
+🟢Step 3: Network Configuration 🔧
+
+1️⃣ Configure Network Settings:
+Ensure both VMs are connected to the same network adapter (e.g., Internal Network) for communication.
+2️⃣ Start Virtual Machines:
+Start both VMs and log in.
+
+🟢 Step 4: Install & Configure the Network on Linux 🖥️
+
+1️⃣ Update the System:
+On both VMs, run the command:
+
+sudo apt update && sudo apt upgrade -y
+
+2️⃣ Configure IP Addresses:
+Edit the network configuration file with nano:
+
+sudo nano /etc/netplan/00-installer-config.yaml
+
+
+3️⃣ YAML Configuration for VM1:
+
+network:
+  version: 2
+  ethernets:
+    enp0s3:
+      addresses:
+        - 192.168.1.10/24
+      routes:
+        - to: 0.0.0.0/0
+          via: 192.168.1.1
+      nameservers:
+        addresses:
+          - 8.8.8.8
+
+4️⃣ YAML Configuration for VM2:
+
+network:
+  version: 2
+  ethernets:
+    enp0s3:
+      addresses:
+        - 192.168.1.11/24
+      routes:
+        - to: 0.0.0.0/0
+          via: 192.168.1.1
+      nameservers:
+        addresses:
+          - 8.8.8.8
+
+5️⃣ Apply IP Address Changes:
+Save with Ctrl+O and exit with Ctrl+X.
+Apply the network configuration:
+
+sudo netplan apply
+
+🔍 If you encounter permissions issues, refer to “Troubleshooting” guide under issue #4.
+
+🟢 Step 5: Test Network Connection 🌐
+1️⃣ Ping VM1 from VM2:
+On VM2, open the terminal and run:
+
+ping 192.168.1.10
+
+
+2️⃣ Ping VM2 from VM1:
+On VM1, open the terminal and run:
+
+ping 192.168.1.11
+
+
+🟢 Step 6: Final Steps 🏁
+
+1️⃣ Install Optional Services (Optional):
+Test additional features by installing SSH, FTP, or a web server on one of the VMs.
+2️⃣ Document the Project:
+Record all steps, commands, and any issues you encountered for future reference 📓.
+🎉 Now you have created and configured a basic LAN using virtual machines!
+
+🟢🟢 🌐 PHASE 2: Network Analysis and Security 🔍 🟢🟢
+
+After setting up the network, use Wireshark and Scapy for network traffic analysis and understanding basic security issues.
+
+1. Network Analysis Tool: Wireshark 📈
+1️⃣ Install Wireshark:
+On one of the VMs, run:
+
+sudo apt update
+sudo apt install wireshark
+
+
+Start Wireshark as root or a user with capture privileges:
+
+sudo wireshark
+
+
+2️⃣ Capture Traffic:
+Select your network interface (e.g., enp0s3).
+Start a ping from one VM to another while Wireshark captures traffic.
+You should see ICMP packets, used by ping, in the capture.
+3️⃣ Analyze Results in Wireshark:
+Filter for ICMP packets by typing:
+
+icmp
+
+
+2. Perform Network Analysis with Scapy 🐍
+1️⃣ Install Scapy:
+
+sudo apt install python3-scapy
+
+2️⃣ Example Scapy Script to Send a Ping Packet:
+
+from scapy.all import *
+packet = IP(dst="192.168.1.11")/ICMP()
+send(packet)
+
+Run this script from VM1 and observe ICMP traffic on VM2 using Wireshark.
+
+3. Bash Scripting for Network Automation 📜
+1️⃣ Create a Ping Script in Bash:
+
+#!/bin/bash
+ping -c 4 192.168.1.11 > ping_results_VM2.txt
+ping -c 4 192.168.1.10 > ping_results_VM1.txt
+echo "Ping complete. Results saved."
+
+2️⃣ Make the Script Executable:
+
+chmod +x ping_script.sh
+
+3️⃣ Run the Script:
+
+./ping_script.sh
+
+
+4. Continue with Security Analysis 🔐
+As you gain insights into basic traffic, explore security aspects like monitoring packets with incorrect data or simulating attacks with Scapy for further practice.
