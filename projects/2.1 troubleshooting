@@ -1,0 +1,114 @@
+Phase 1 🖥️
+
+🟢 1. Install VirtualBox:
+After downloading, open the installation file and follow the instructions.
+
+Troubleshooting 1 🔧
+🟢 2. Installing Python and Solving PATH Issues
+Problem Description
+Initial issue: Python was already installed, but the system couldn’t locate Python or pip when running commands like python --version or pip --version.
+Cause: Python wasn’t added to the system's PATH, so Windows couldn’t locate Python when you tried to run Python-related commands from the command prompt.
+Steps to Solve the Problem
+Verify Python Installation:
+Run:
+
+python --version
+This command didn’t work, confirming the system didn’t recognize the Python installation.
+Check PATH:
+We realized the issue could be due to Python not being added to Windows PATH, which is required for running Python and pip commands globally from the command prompt.
+
+Install pywin32:
+Once Python and pip are installed, run:
+
+pip install pywin32
+Press Enter to install the necessary Python libraries for Windows API (win32).
+
+🟢 Step 3: Connect Ubuntu ISO to VirtualBox 💽
+Open VirtualBox.
+Create a New Virtual Machine:
+Click on New.
+Name the VM, for example, "VM1".
+Choose Linux as the type and Ubuntu (64-bit) as the version.
+Assign Memory (RAM):
+Allocate at least 2GB of RAM (2048MB); more is better if available.
+Create a Virtual Hard Disk:
+Choose Create a virtual hard disk now.
+Select VDI (VirtualBox Disk Image) as the hard disk type.
+Allocate at least 20GB of storage.
+Attach the ISO file:
+Go to Settings for the created VM.
+Select the Storage tab.
+Under Controller: IDE, select the empty slot and click the CD icon.
+Choose "Choose a disk file" and navigate to your Ubuntu ISO file.
+Start the Virtual Machine:
+Click Start to boot from the ISO.
+Follow the on-screen instructions to install Ubuntu.
+
+Adjusting Settings
+Processors:
+Increase processors to 2 or 3 CPUs for better performance.
+RAM:
+Keep RAM at 4628 MB (4.6 GB) or adjust based on performance needs.
+EFI:
+Leave EFI unchecked unless you need UEFI boot support. Ubuntu works fine with BIOS boot.
+
+🟢 Troubleshooting 2 🔧
+If you missed selecting VDI, here’s how to convert it:
+Convert Existing Disk to VDI Format:
+Open Virtual Media Manager in VirtualBox.
+In Hard Disks, select the disk and Copy it as VDI.
+Attach the new VDI disk to the VM.
+
+🟢 Troubleshooting 3 🔧
+You can’t use Ubuntu installed through WSL in VirtualBox. Download the ISO file from Ubuntu’s website.
+
+🟢 Troubleshooting 4 🔧
+Check Keyboard Layout
+Make sure the VM keyboard layout matches your physical keyboard to avoid errors in the terminal.
+
+🟢 Troubleshooting 5 🔧
+Permission Issue for /etc/netplan/00-installer-config.yaml
+Problem: File permissions are too open. Netplan requires strict permissions.
+Solution: Adjust file permissions:
+
+sudo chmod 600 /etc/netplan/00-installer-config.yaml
+
+
+Fix YAML Configuration Formatting: Ensure indentation is correct, as YAML is space-sensitive.
+
+🟢🟢 Phase 2: Network Analysis and Security 🔍 🟢🟢
+Network Analysis Tools: Wireshark
+Install Wireshark to capture packets:
+sql
+
+sudo apt update
+sudo apt install wireshark
+
+
+Choose your network interface (e.g., enp0s3) to capture traffic and start a ping between VMs to see ICMP packets.
+Analyze Results in Wireshark
+Use the filter icmp to view only ICMP (ping) packets.
+Network Analysis with Scapy
+Install Scapy:
+
+sudo apt install python3-scapy
+
+
+Example script:
+
+from scapy.all import *
+packet = IP(dst="192.168.1.11")/ICMP()
+send(packet)
+
+
+Bash Scripting for Network Automation
+Ping both VMs and save the results:
+
+#!/bin/bash
+ping -c 4 192.168.1.11 > ping_results_VM2.txt
+ping -c 4 192.168.1.10 > ping_results_VM1.txt
+echo "Ping complete. Results saved."
+
+
+Continue with Security Analysis
+Look into packets with suspicious data, or simulate attacks with Scapy for deeper security insights.
