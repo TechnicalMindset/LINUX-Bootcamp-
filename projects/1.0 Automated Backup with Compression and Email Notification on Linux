@@ -1,0 +1,87 @@
+🛠️ Automated Backup with Compression and Email Notification on Linux
+
+📝 Description
+In this project, I delve into creating an automated backup solution in Linux. This guide will show you how to:
+✅ Install necessary tools for backup management.
+✅ Write and manage scripts to automate backups.
+Schedule regular backups using Cron. This is ideal for building skills in system administration and Linux file management.
+
+🎯 Project Goal
+Automate backups of important files on a server. This backup should be compressed to save space, stored securely, and an email notification should be sent upon completion.
+
+🚀 Step-by-Step Guide
+🛠️ Step 1: Install Necessary Tools
+Open the terminal.
+Run the following commands to install tar, gzip, and mailutils if not already installed:
+
+✔️sudo apt update
+✔️sudo apt install tar gzip mailutils
+✔️tar: Creates an archive file.
+✔️gzip: Compresses the backup.
+✔️mailutils: Sends email notifications.
+
+📁 Step 2: Create Backup Directory
+Decide where to save your backups. For example, we'll use the directory ~/technical_mindset/backups. Create this with:
+mkdir -p ~/technical_mindset/backups
+
+
+📝 Step 3: Write the Backup Script
+Now, create a Bash script that performs the backup and sends email notifications.
+Example Script: backup.sh
+
+#!/bin/bash
+# Specify directories to backup
+SOURCE_DIRECTORIES="/etc"
+BACKUP_DIRECTORY="/root/hereyourusername/backups"
+
+# Create a filename with today's date
+DATE=$(date +"%Y%m%d")
+BACKUP_FILE="$BACKUP_DIRECTORY/backup_$DATE.tar.gz"
+
+echo "Creating backup at: $BACKUP_FILE"
+echo "Backing up directories: $SOURCE_DIRECTORIES"
+
+# Create compressed backup
+tar -czf $BACKUP_FILE $SOURCE_DIRECTORIES 2>> error_log.txt
+
+if [ $? -eq 0 ]; then
+    echo "Backup completed successfully on $(date)" | mail -s "Backup Success" hello.technicalmindset@gmail.com
+else
+    echo "Backup failed!" | mail -s "Backup Failure" hello.technicalmindset@gmail.com
+fi
+Save the file, then close the editor.
+
+🔑 Step 4: Make Script Executable
+Run this command to make the script executable:
+chmod +x ~/root/hereyourusername/backup.sh
+
+
+
+🧪 Step 5: Test the Script
+Run the script manually to ensure it works:
+~/root/Technical_mindset/backup.sh
+
+Check if a backup file was created in the backup directory:
+ls ~/root/hereyourusername/backups
+
+
+⏰ Step 6: Automate with Cron
+Schedule the script to run daily at 13:00. using Cron:
+Open Cron editor:
+
+crontab -e
+Add the following line to schedule the backup:
+
+1 3 * * * ~/root/hereyourusername/backup.sh
+
+
+Save and close.
+
+🔍 Step 7: Check Cron Jobs
+Confirm that the cron job is active with:
+crontab -l
+
+
+🛠 Real World Application
+This project can be used for regular server backups, notifying you of successful completions. It is a practical way to protect data and maintain continuous operation in system administration environments.
+
