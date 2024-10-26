@@ -59,6 +59,7 @@ Replace 192.168.1.11 with the IP address of the VM you’re pinging.
 ping -c 4 192.168.1.11 > ping_results_VM2.txt
 
 Run chmod +x ping_script.sh and ./ping_script.sh to execute.
+
 ❓ What if I cannot ping between VMs?
 ✅ Double-check the IP addresses, network settings (they should both be on Internal Network), and YAML configurations. Run sudo netplan apply after any network config changes.
 
