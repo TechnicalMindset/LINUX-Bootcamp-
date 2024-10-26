@@ -1,0 +1,52 @@
+❓ What is VirtualBox, and why do I need it for this project?
+✅ VirtualBox is a free virtualization software that lets you create virtual computers (virtual machines or VMs) on your actual computer. For this project, you need it to set up virtual machines that simulate the network.
+
+❓ How do I install VirtualBox?
+✅ After downloading the VirtualBox installer, open it and follow the setup steps. Make sure to check all default settings unless you have specific needs.
+
+❓ What is an "ISO file," and why do I need it?
+✅ An ISO file is like a virtual copy of a physical disc. It contains the installation files for an operating system. For this project, you need an Ubuntu ISO file to install the Ubuntu OS on your virtual machines.
+
+❓ How do I download the Ubuntu ISO file?
+✅ Go to the official Ubuntu website, choose the version you want (e.g., Ubuntu 20.04 LTS), and download the ISO file.
+❓ How do I connect the Ubuntu ISO to my virtual machine?
+✅ In VirtualBox, after creating a virtual machine, go to the Settings > Storage tab. Select the empty disk slot, click the CD icon, and choose the ISO file you downloaded.
+❓ What are "Internal Network" and "Bridged Network" in VirtualBox?
+✅ Internal Network connects only the virtual machines within your VirtualBox network, so they talk to each other privately. Bridged Network connects the virtual machines directly to your real network, which is helpful if you want them to access the internet.
+❓ Why set the network to "Internal Network" for both VMs?
+✅ By setting both VMs to Internal Network, they can communicate only with each other, which makes it ideal for learning and testing local network setups without outside access.
+❓ What are static IP addresses, and why use them?
+✅ Static IP addresses are fixed addresses that don't change each time the machine restarts. We use them here so each VM has a consistent IP, making it easier to test connections.
+❓ How do I assign a static IP address in Ubuntu?
+✅ Edit the file at /etc/netplan/00-installer-config.yaml in Ubuntu and specify the IP addresses. For example, one VM could have 192.168.1.10, and the other 192.168.1.11.
+❓ Why do I get a permissions error when editing netplan files?
+✅ This happens because the netplan file requires secure access. Run sudo chmod 600 /etc/netplan/00-installer-config.yaml to set the correct permissions.
+❓ How do I check the network interface name for my VM?
+✅ Run ip addr show in your VM’s terminal. Look for names like enp0s3 or eth0.
+❓ What is Wireshark, and why use it?
+✅ Wireshark is a network traffic analyzer. It lets you observe the data packets between your VMs to better understand network traffic.
+❓ How do I capture packets in Wireshark?
+✅ Open Wireshark, select the network interface (like enp0s3), and start capturing. For example, you can monitor traffic when you ping between VMs.
+❓ What is Scapy, and what does it do?
+✅ Scapy is a Python library for network programming. You can use it to create and send packets, which helps simulate different types of network traffic for testing.
+❓ How do I install Scapy on my VM?
+✅ Run sudo apt install python3-scapy in the terminal. This installs Scapy, making it easy to create and manipulate network packets.
+❓ How can I use Scapy to send a ping packet?
+✅ Open a Python script and write:
+
+from scapy.all import *
+packet = IP(dst="192.168.1.11")/ICMP()
+send(packet)
+
+Replace 192.168.1.11 with the IP address of the VM you’re pinging.
+❓ How do I automate tasks like pinging in bash?
+✅ Create a shell script (e.g., ping_script.sh) with:
+
+
+#!/bin/bash
+ping -c 4 192.168.1.11 > ping_results_VM2.txt
+
+Run chmod +x ping_script.sh and ./ping_script.sh to execute.
+❓ What if I cannot ping between VMs?
+✅ Double-check the IP addresses, network settings (they should both be on Internal Network), and YAML configurations. Run sudo netplan apply after any network config changes.
+
