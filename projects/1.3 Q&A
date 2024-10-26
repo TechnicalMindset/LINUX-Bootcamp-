@@ -1,0 +1,40 @@
+Phase 1: Initial Setup
+
+❓ What do I need to install to get started with this project?
+✅ You’ll need Ubuntu (or any Linux OS), VirtualBox, Git, and GitHub access.
+❓ How do I install VirtualBox?
+✅ Go to VirtualBox website and download the version for your OS, then follow the installation instructions.
+❓ What is Git, and why do I need it?
+✅ Git is a tool to track code changes. It helps you manage and share your project with others on GitHub.
+❓ Why am I using Ubuntu instead of Windows?
+✅ Ubuntu lets you practice Linux commands and networking, which is important in IT Infrastructure roles.
+Phase 2: Creating and Configuring Virtual Machines (VMs)
+❓ How do I create a new VM in VirtualBox?
+✅ Open VirtualBox, click 'New,' follow the prompts to name your VM and allocate memory and disk space, and select Ubuntu as the OS.
+❓ What’s a “network adapter” in VirtualBox, and why should I change it?
+✅ The network adapter connects the VM to your network. You’ll change settings to practice LAN setups and connect VMs internally.
+❓ How do I connect two VMs so they can talk to each other?
+✅ Set each VM's network adapter to “Internal Network,” and assign unique IPs so they can communicate.
+Phase 3: Basic Linux Commands and File Management
+❓ What’s the basic structure of a Linux command?
+✅ A Linux command usually has a command name, options, and arguments (e.g., ls -l /home shows detailed files in the 'home' folder).
+❓ How can I create a folder in Linux?
+✅ Use mkdir foldername to create a folder.
+❓ How do I move or copy files?
+✅ Use mv for moving and cp for copying. For example, mv file.txt /newfolder moves file.txt to /newfolder.
+Phase 4: Network Configuration in Linux
+❓ What is netplan, and why do we use it?
+✅ Netplan configures network settings like IP addresses in Ubuntu. It lets you set up static IPs or connect to the internet.
+❓ How do I edit the network configuration file?
+✅ Type sudo nano /etc/netplan/00-installer-config.yaml to open the file.
+❓ What does "static IP address" mean?
+✅ A static IP is an IP address that doesn’t change. It’s useful for setting up a reliable local network between your VMs.
+❓ How do I save and apply network settings in Netplan?
+✅ Edit and save the file, then run sudo netplan apply to apply changes.
+Phase 5: Basic Git and GitHub
+❓ What is the difference between Git and GitHub?
+✅ Git is for tracking changes in your files, while GitHub is a place to store and share those files online.
+❓ How do I push my project to GitHub?
+✅ Use git push origin main after committing to upload your project to GitHub.
+❓ How can I get feedback or ask questions on GitHub?
+✅ Use the Issues tab in your GitHub repo to ask questions or report issues.
