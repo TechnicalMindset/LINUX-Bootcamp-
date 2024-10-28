@@ -5,7 +5,7 @@ Getting Started: You can contribute by forking this repository and fixing small 
 Steps to Contribute:
 
 - Fork the repository and clone it locally.
-Find an issue marked as "beginner-friendly" or “good first issue.”
+- Find an issue marked as "beginner-friendly" or “good first issue.”
 Make your changes and submit a pull request!
 
 💛 2. Collaborate on Projects
