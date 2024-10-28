@@ -26,5 +26,6 @@ Your support fuels our efforts! Show your appreciation by:
 Starring the repositories you find helpful.
 Following the repository to stay updated on new projects, changes, and discussions.
 Connecting with fellow learners and contributors in issues or discussions.
+
 🌟 Together, We’re Building a Supportive Community!
 By contributing and learning together, we create a beginner-friendly space to develop essential tech skills in demand today. Let’s make technology more accessible, step by step. 🌼
