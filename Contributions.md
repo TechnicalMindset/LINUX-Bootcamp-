@@ -1,4 +1,4 @@
-🚀 Ways to Contribute and Collaborate
+🚀 Ways to Contribute and Collaborate:
 
 💛 1. Contribute to Your First Issue
 Getting Started: You can contribute by forking this repository and fixing small issues. Examples include correcting grammar or adding comments for clarity.
