@@ -6,7 +6,7 @@ Steps to Contribute:
 
 - Fork the repository and clone it locally.
 - Find an issue marked as "beginner-friendly" or “good first issue.”
-Make your changes and submit a pull request!
+- Make your changes and submit a pull request!
 
 💛 2. Collaborate on Projects
 Hands-On Learning: Participate in practical projects. We have options for all levels, from basic tasks to more complex feature implementations.
