@@ -21,7 +21,6 @@ How to Share: You can either create an issue with links to the resources or add 
 Enhance Projects: If you have ideas on improving any project or solving issues, share your insights by commenting on issues or adding to pull requests.
 Tools & Tips: Any helpful tools or unique perspectives are welcome and add value to our community.
 
-
 📈 Tracking Progress & Staying Connected
 Your support fuels our efforts! Show your appreciation by:
 
