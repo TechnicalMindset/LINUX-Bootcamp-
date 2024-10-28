@@ -3,7 +3,8 @@
 💛 1. Contribute to Your First Issue
 Getting Started: You can contribute by forking this repository and fixing small issues. Examples include correcting grammar or adding comments for clarity.
 Steps to Contribute:
-Fork the repository and clone it locally.
+
+- Fork the repository and clone it locally.
 Find an issue marked as "beginner-friendly" or “good first issue.”
 Make your changes and submit a pull request!
 
