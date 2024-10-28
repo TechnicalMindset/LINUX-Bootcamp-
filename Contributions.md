@@ -8,6 +8,7 @@ Steps to Contribute:
 - Find an issue marked as "beginner-friendly" or “good first issue.”
 - Make your changes and submit a pull request!
 
+
 💛 2. Collaborate on Projects
 Hands-On Learning: Participate in practical projects. We have options for all levels, from basic tasks to more complex feature implementations.
 Reach Out: Feel free to contact the project owner or contributors if you’re interested in collaborating on a specific project.
