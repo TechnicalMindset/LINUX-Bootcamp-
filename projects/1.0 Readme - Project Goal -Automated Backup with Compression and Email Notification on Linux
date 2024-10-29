@@ -1,0 +1,37 @@
+📚 Phase 1 📚
+
+Goal: Understand the basics of Linux and networking.
+
+Tasks:
+
+Linux Command Line Bootcamp.
+Networking protocols, IP addressing, and subnetting.
+Tools: Bash scripting, SSH, iptables
+
+Project name: 1.1 Automated Backup with Compression and Email Notification on Linux
+
+Phase 1: Basic Network Setup
+Install two virtual Linux machines (e.g., Ubuntu) with VirtualBox/VMware.
+Configure a basic LAN: assign static IPs and verify connectivity with ping.
+
+KPI: Install Linux environment and navigate file system.
+VMs should ping each other successfully.
+
+Focus: Linux, Networking Basics and basic computer technology
+
+Courses:
+
+- The Linux Command Line Bootcamp:    https://www.udemy.com/course/the-linux-command-line-bootcamp/learn/lecture/26153092?start=75#overview
+- Networking Fundamentals:    https://www.netacad.com/courses/networking-basics?courseLang=en-US
+
+
+💡 Skills Gained After Phase 1
+
+✅ Linux Bootcamp:
+🔧 Mastering Linux command line
+🖥️ Navigating Linux file systems
+🔐 Managing user permissions and file security
+💡 Automating tasks with bash scripting
+📂 Understanding Linux file hierarchy
+📊 Monitoring system performance and services
+
