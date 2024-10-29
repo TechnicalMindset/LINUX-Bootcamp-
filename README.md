@@ -9,10 +9,11 @@ Empower you to master Linux with a focus on virtualization and cloud environment
 🚀 Getting Started
 Clone the Repository
 
-bash
-Kopiera kod
+
 git clone https://github.com/your-username/linux-bootcamp.git
 cd linux-bootcamp
+
+
 Explore the README.md
 The main README is your guide, containing a roadmap, project objectives, and pro tips for beginners.
 
