@@ -1,0 +1,30 @@
+📈 Phase 2 📈
+
+Goal: Deepen your knowledge of Linux commands and network settings.
+
+Tasks:
+Set up a basic LAN with virtual machines.
+
+Tools: Wireshark
+Projects:
+Phase 2 : Firewall Setup with iptables
+Create firewall rules on one VM to allow specific traffic (e.g., only SSH).
+KPI: Ensure firewall rules are applied correctly.
+
+💡 Skills Gained
+
+✅ Linux Bootcamp:
+🔧 Mastering Linux command line
+🖥️ Navigating Linux file systems
+🔐 Managing user permissions and file security
+💡 Automating tasks with bash scripting
+📂 Understanding Linux file hierarchy
+📊 Monitoring system performance and services
+
+✅ Networking Basics:
+🌐 Grasping IP addressing and subnetting
+🛠️ Configuring routers, switches, and networks
+📡 Understanding network topologies and architectures
+🔌 Setting up basic LAN and WAN networks
+🗄️ Learning DHCP, DNS, and NAT
+🔍 Troubleshooting network connectivity issues
