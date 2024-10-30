@@ -1,5 +1,4 @@
-![Logo](https://avatars.githubusercontent.com/u/179322211?v=4)
-<img src="https://avatars.githubusercontent.com/u/179322211?v=4" alt="Logo" width="150" style="border-radius: 50%;">
+<img src="https://avatars.githubusercontent.com/u/179322211?v=4" alt="Logo" width="150" style="border-radius: 80%;">
 
 
 
