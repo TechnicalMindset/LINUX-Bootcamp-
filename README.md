@@ -24,12 +24,14 @@ The main README is your guide, containing a roadmap, project objectives, and pro
 If you're new to Linux, start with the foundational projects in the projects/ folder and progress through each step. Each module builds upon the last, preparing you for Linux in virtual and cloud contexts.
 
 📂 Repository Structure
-README.md
+- README.md
 Your roadmap and guide. This README includes bootcamp objectives, beginner tips, and a clear breakdown of each project to help you progress.
-projects/
+
+- projects/
 Hands-on Projects focused on virtualization and cloud-ready skills. Topics start with file management, permissions, and bash scripting, and move to more advanced networking and virtualization configurations.
 Project Files: Clearly organized as 01-setup-environment.md, 02-first-script.sh, etc., making it easy to follow a structured path from beginner to advanced.
-resources/
+
+- resources/
 A curated collection of study materials and useful links on Linux for cloud and virtualization. This folder provides you with additional reading and resources to expand your knowledge alongside hands-on projects.
 questions-and-answers.md
 A Q&A file that addresses common questions and solutions for each project. Questions are marked with ❓, and answers with ✅ for easy navigation.
