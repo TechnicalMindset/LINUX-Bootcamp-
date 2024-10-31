@@ -34,9 +34,10 @@ Project Files: Clearly organized as 01-setup-environment.md, 02-first-script.sh,
 - resources/
 A curated collection of study materials and useful links on Linux for cloud and virtualization. This folder provides you with additional reading and resources to expand your knowledge alongside hands-on projects.
 questions-and-answers.md
-A Q&A file that addresses common questions and solutions for each project. Questions are marked with ❓, and answers with ✅ for easy navigation.
-📈 Guided Assignments & Community Involvement
-Assignments are posted as GitHub Issues, each tagged by difficulty level—beginner, intermediate, or advanced. Use these to track your progress, ask questions, and get feedback from the community.
+
+- A Q&A file that addresses common questions and solutions for each project. Questions are marked with ❓, and answers with ✅ for easy navigation.
+
+- Assignments are posted as GitHub Issues, each tagged by difficulty level—beginner, intermediate, or advanced. Use these to track your progress, ask questions, and get feedback from the community.
 
 Naming Convention: Files follow a clear structure like 01-setup-environment.md, so you can follow a logical, step-by-step learning path.
 🤝 Contributing to the Bootcamp
