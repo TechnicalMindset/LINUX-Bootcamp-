@@ -3,7 +3,7 @@
 
 
 
-From Beginner to Master: Linux Bootcamp for Virtualization & Cloud 🌩️🐧
+# From Beginner to Master: Linux Bootcamp for Virtualization & Cloud 🌩️🐧
 
 Welcome to the Linux Bootcamp for Virtualization & Cloud repository! This project is designed to be a beginner-friendly, open-source guide to mastering Linux essentials, specifically tailored for virtualization and cloud environments. Through practical projects, study resources, and a supportive community, this bootcamp equips you with the skills needed for cloud and virtual infrastructure. Let’s dive into the world of Linux and unlock its potential for virtualization!
 
