@@ -13,14 +13,14 @@ Empower you to master Linux with a focus on virtualization and cloud environment
 Clone the Repository
 
 
-git clone https://github.com/your-username/linux-bootcamp.git
+✔️ git clone https://github.com/your-username/linux-bootcamp.git
 cd linux-bootcamp
 
 
-Explore the README.md
+✔️ Explore the README.md
 The main README is your guide, containing a roadmap, project objectives, and pro tips for beginners.
 
-Choose Your Path
+✔️ Choose Your Path
 If you're new to Linux, start with the foundational projects in the projects/ folder and progress through each step. Each module builds upon the last, preparing you for Linux in virtual and cloud contexts.
 
 📂 Repository Structure
