@@ -1,0 +1,108 @@
+Assignment: Navigating and Managing Files in Linux 🌟
+This assignment covers essential Linux commands for navigating the filesystem and managing files. Each concept builds upon the basics, helping you gain confidence in working with Linux directories and files.
+
+🔍 Navigating Linux and Windows Filesystems
+Exploring the Filesystem with cd
+Today’s focus is on learning how to navigate the filesystem with the cd command. Practicing cd commands lets you move between directories, even if they’re on your Windows system, accessible from Ubuntu.
+Example:
+To navigate to a specific folder on your Windows drive:
+
+bash
+Kopiera kod
+cd /mnt/c/Users/phili/Downloads/Farm
+Here, /mnt is the mount point where Linux connects to the Windows filesystem, allowing easy access to Windows files and folders.
+
+Tip: If your files are stored in different folders, such as Downloads and OneDrive, use the correct path to reach each location:
+
+bash
+Kopiera kod
+cd /mnt/c/Users/phili/OneDrive/Farm
+🗂️ Moving Up in Directories with cd
+Going Up a Level
+Learn to move up a directory level with cd ..:
+bash
+Kopiera kod
+cd ..
+Jumping Multiple Levels
+To move two levels up and directly enter another directory, use:
+bash
+Kopiera kod
+cd ../../another_directory
+📂 Creating New Directories and Files
+Creating Folders with mkdir
+Use mkdir to create new directories.
+
+Example:
+bash
+Kopiera kod
+mkdir NewFolder
+Making Multiple Folders at Once with mkdir -p
+Create a full directory structure in one step:
+
+bash
+Kopiera kod
+mkdir -p MainFolder/SubFolder
+This command creates both MainFolder and SubFolder at once if they don’t already exist.
+
+📄 Creating and Viewing Files: touch vs. echo
+Creating Empty Files with touch
+touch creates an empty file without any content.
+
+Example:
+bash
+Kopiera kod
+touch myfile.txt
+Writing Content to Files with echo
+Use echo to create a file and immediately add content:
+
+Example:
+bash
+Kopiera kod
+echo "This is a new file" > newfile.txt
+🐱 Displaying File Content with cat
+Viewing Files with cat
+Use cat to display the content of a file directly in the terminal:
+Example:
+To view the content of myfile.txt:
+bash
+Kopiera kod
+cat myfile.txt
+This command lets you quickly check file content without needing to open a text editor.
+🧠 Questions & Answers to Reinforce Learning
+❓ What is /mnt in Linux, and why is it useful when navigating the Windows filesystem?
+
+Answer: /mnt is the directory where Linux mounts other filesystems, like Windows drives, allowing you to access Windows files from the Linux terminal.
+❓ What’s the difference between mkdir and mkdir -p?
+
+Answer: mkdir creates a single folder. If it exists, it will return an error. mkdir -p allows you to create multiple folders and subfolders in one command.
+❓ When should you use touch instead of echo?
+
+Answer: Use touch when you want to create an empty file without content. Use echo to create a file and add content simultaneously.
+❓ What does the cat command do, and when is it helpful?
+
+Answer: cat displays the content of a file in the terminal, which is useful for quickly reviewing file content without opening an editor.
+📚 Practice Exercises
+Create a Folder Structure:
+Navigate to /mnt/c/Users/phili/OneDrive and create a folder called Projects with a subfolder named 2024 in one command:
+
+bash
+Kopiera kod
+mkdir -p Projects/2024
+Create and Write to a File:
+Inside Projects/2024, create a file called plan.txt and add the text "My plan for 2024":
+
+bash
+Kopiera kod
+echo "My plan for 2024" > Projects/2024/plan.txt
+Display File Content with cat:
+View the content of plan.txt:
+
+bash
+Kopiera kod
+cat Projects/2024/plan.txt
+Create a File with Spaces in the Name:
+Create a file named "my new document.txt" with proper syntax:
+
+bash
+Kopiera kod
+touch "my new document.txt"
